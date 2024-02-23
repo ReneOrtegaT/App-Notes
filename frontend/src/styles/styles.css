@@ -1,0 +1,136 @@
+/* Estilos comunes para los botones */
+.edit-button,
+.delete-button,
+.archive-button,
+.save-button {
+  padding: 10px 15px;
+  margin-right: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #fff;
+}
+
+.edit-button { background-image: linear-gradient(109.6deg, rgba(62, 161, 219, 1) 11.2%, rgba(93, 52, 236, 1) 100.2%); }
+.delete-button { background-image: linear-gradient(109.6deg, rgba(255, 89, 94, 1) 11.2%, rgba(255, 0, 85, 1) 100.2%); }
+.archive-button { background-image: linear-gradient(109.6deg, rgba(62, 161, 219, 1) 11.2%, rgba(93, 52, 236, 1) 100.2%); }
+.save-button { background-image: linear-gradient(109.6deg, rgba(255, 201, 71, 1) 11.2%, rgba(255, 178, 36, 1) 100.2%); }
+
+/* Estilos para la nota individual (Note.js) */
+.note-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.note-content {
+  flex-grow: 1;
+  background-color: #fff;
+  max-height: 200px;
+  overflow: auto;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.note-content span {
+  font-size: 18px;
+  font-style: initial;
+  color: #444;
+  background-color: #f7f7f7;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+}
+
+.note-buttons,
+.central-container .input-area {
+  background-image: linear-gradient(109.6deg, rgba(230, 230, 230, 1) 11.2%, rgba(220, 220, 220, 1) 100.2%);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.note-buttons { display: flex; align-items: center; }
+
+/* Estilos para la lista de notas (NoteList.js) */
+.note-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.note-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.note-item:hover { box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
+
+/* Contenedor para las notas con barras de desplazamiento */
+.active-notes-container,
+.archived-notes-container {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para los títulos */
+h1, h2 {
+  font-size: 50px;
+  color: #333;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+h1 { font-size: 70px; }
+h2 { font-size: 40px; }
+
+/* Estilos para el contenedor de los elementos centrales */
+.central-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.central-container input[type="text"] {
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 300px;
+}
+
+.central-container button {
+  padding: 15px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 24px;
+  background-image: linear-gradient(109.6deg, rgba(62, 161, 219, 1) 11.2%, rgba(93, 52, 236, 1) 100.2%);
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.central-container button:hover { background-image: linear-gradient(109.6deg, rgba(46, 119, 174, 1) 11.2%, rgba(36, 92, 132, 1) 100.2%); }
+
+/* Estilos para el fondo de la página */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Dosis', sans-serif;
+  background: linear-gradient(to bottom, #fffacd, #ffe4b5);
+}
